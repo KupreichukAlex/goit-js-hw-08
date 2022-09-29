@@ -22,16 +22,6 @@ const galleryMarkup = galleryItems
 galleryItemsList.innerHTML = galleryMarkup;
 // console.log(galleryMarkup);
 
-galleryItemsList.addEventListener('click', onImageClick);
-
-function onImageClick(event) {
-    event.preventDefault();
-
-    const filterSource = event.target.dataset.source;
-    if (!filterSource) return;
-
-    console.log(filterSource)
-}
 
 const lightbox = new SimpleLightbox('.gallery a', { captionsData : "alt", captionDelay : 250});
-lightbox.on("show.simplelightbox");
+

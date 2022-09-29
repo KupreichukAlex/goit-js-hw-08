@@ -9,7 +9,7 @@ initForm();
 
 inputForm.addEventListener('input', onFormInputContent);
 inputForm.addEventListener('submit', onInputFormSub);
-inputForm.addEventListener('change', throttle(onInputChange, 500));
+
 
 // за допомогою FormData збираємо дані із усіх полів,
 // за допомогою методу forEach отримуємо ці дані у вигляді об'єкту
